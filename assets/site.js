@@ -92,6 +92,15 @@
       f.allow = 'accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen';
       box.appendChild(f);
     }
+    const meta = slot.querySelector('.video-meta');
+    if (meta && (cfg.videoLabel || cfg.videoShortSrc)) {
+      const l = document.createElement('span'); l.textContent = cfg.videoLabel || ''; meta.appendChild(l);
+      if (cfg.videoShortSrc) {
+        const a = document.createElement('a'); a.href = cfg.videoShortSrc; a.textContent = cfg.videoShortLabel || 'Vertical version';
+        a.target = '_blank'; a.rel = 'noopener'; meta.appendChild(a);
+      }
+      meta.hidden = false;
+    }
     slot.hidden = false;
   }
 })();
