@@ -1,0 +1,22 @@
+@media (max-width:960px){
+  .navlinks{display:none}.burger{display:block}.nav{gap:16px}
+  .hero,.why,.pledge-grid,.signup-grid{grid-template-columns:1fr;gap:48px}
+  .aside{position:static}
+  .activities{grid-template-columns:repeat(2,1fr)}
+  .tagline p{font-size:48px}
+}
+@media (max-width:640px){
+  .wrap{width:calc(100% - 32px)}
+  .topline .wrap span:last-child{display:none}
+  .section{padding:64px 0}.tagline{padding:96px 0}
+  .hero{padding:48px 0 64px}.hero h1{font-size:48px}
+  .head{display:block;margin-bottom:32px}.head p{margin-top:16px}.head h2,.h2{font-size:36px;line-height:40px}
+  .cards,.partners,.activities{grid-template-columns:1fr}
+  .panel{min-height:360px;padding:24px}.panel .big{font-size:36px;line-height:40px}
+  .tagline p{font-size:36px;line-height:40px}
+  .doc{padding:24px}.aside,.form-card{padding:24px}
+  .toolbar{display:block}.tabs{margin-top:12px;width:max-content;max-width:100%;overflow-x:auto}
+  .event{grid-template-columns:64px 1fr;gap:16px;padding:16px}.event .btn{grid-column:2;justify-self:start}
+  .final{display:block;padding:32px;border-radius:24px}.final .btn{margin-top:24px}.final h2{font-size:30px;line-height:36px}
+  .footer .wrap{display:block}.footer .wrap span{display:block;margin-top:8px}
+}
