@@ -8,6 +8,8 @@
 @media (max-width:640px){
   .wrap{width:calc(100% - 32px)}
   .topline .wrap span:last-child{display:none}
+  .topline .rest{display:none}
+  .nav{width:calc(100% - 32px);justify-content:space-between;padding-left:20px}.nav>.btn{display:none}
   .section{padding:64px 0}.tagline{padding:96px 0}
   .hero{padding:48px 0 64px}.hero h1{font-size:48px}
   .head{display:block;margin-bottom:32px}.head p{margin-top:16px}.head h2,.h2{font-size:36px;line-height:40px}
