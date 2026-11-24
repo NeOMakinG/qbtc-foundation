@@ -93,12 +93,13 @@
       box.appendChild(f);
     }
     const meta = slot.querySelector('.video-meta');
-    if (meta && (cfg.videoLabel || cfg.videoShortSrc)) {
+    const links = cfg.videoLinks || (cfg.videoShortSrc ? [{ src: cfg.videoShortSrc, label: cfg.videoShortLabel || 'Vertical version' }] : []);
+    if (meta && (cfg.videoLabel || links.length)) {
       const l = document.createElement('span'); l.textContent = cfg.videoLabel || ''; meta.appendChild(l);
-      if (cfg.videoShortSrc) {
-        const a = document.createElement('a'); a.href = cfg.videoShortSrc; a.textContent = cfg.videoShortLabel || 'Vertical version';
+      links.forEach((k) => {
+        const a = document.createElement('a'); a.href = k.src; a.textContent = k.label;
         a.target = '_blank'; a.rel = 'noopener'; meta.appendChild(a);
-      }
+      });
       meta.hidden = false;
     }
     slot.hidden = false;
