@@ -38,3 +38,4 @@
 .why .lede{margin-bottom:32px}
 /* video */
 .video{border-radius:14px;overflow:hidden;background:#000;border:1px solid rgba(247,147,26,.35);aspect-ratio:16/9;width:100%}.video video,.video iframe{width:100%;height:100%;border:0;object-fit:contain;background:#000}.video-meta{display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:space-between;margin-top:12px;font-size:.9rem;opacity:.75}.video-meta a{text-decoration:underline;text-underline-offset:3px}
+.video-meta span{flex:1 1 auto}
